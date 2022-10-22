@@ -59,9 +59,11 @@ def make_prediction(filepath: str, model_dir: str = "app/models"):
         for metric in metrics:
             _, _, empty = generate_val_part(key, x, aircraft_grp_encoder)
             ids, x_val_part, _ = generate_val_part(key, x_val, aircraft_grp_encoder, empty)
+            if x_val_part.shape[0] == 0:
+                continue
             model = CatBoostRegressor().load_model(os.path.join(model_dir, key, f'{metric}.cbm'))
             prediction = model.predict(x_val_part)
-            ids[metric] = prediction
+            ids[metric] = list(prediction)
             if df is None:
                 df = ids
             else:
