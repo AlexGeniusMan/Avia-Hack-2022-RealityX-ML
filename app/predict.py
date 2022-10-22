@@ -49,6 +49,7 @@ def generate_val_part(key: str, x: pd.DataFrame, aircraft_grp_encoder, empty:lis
 
 def make_prediction(filepath: str, model_dir: str = "app/models"):
     x_val = pd.read_csv(filepath)
+    x_val['engine_type'] = x_val['engine_type'].map(lambda x: x.replace('/', '_'))
     x = pd.read_csv('app/X_train.csv')
     x['engine_type'] = x['engine_type'].map(lambda x: x.replace('/', '_'))
     x = x.astype({'n1_modifier': 'int32'})
