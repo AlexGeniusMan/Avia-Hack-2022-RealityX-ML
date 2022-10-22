@@ -4,7 +4,7 @@ Micro service to predict results from `csv` file.
 
 ### Content
 
-0. [Download project](#results)
+0. [Resulted notebook](#results)
 1. [Download project](#download)
 2. [Install requirements](#deps)
 3. [Run API service](#run)
