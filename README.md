@@ -4,11 +4,16 @@ Micro service to predict results from `csv` file.
 
 ### Content
 
+0. [Download project](#results)
 1. [Download project](#download)
 2. [Install requirements](#deps)
 3. [Run API service](#run)
 4. [Available models](#models)
 5. [ML/DS developing](#mlds)
+
+### ML/DS results <a name="results"></a>
+
+See `CHECKME.ipynb` file.
 
 ### Download <a name="download"></a>
 
@@ -58,4 +63,4 @@ Models available in `/app/models` directory.
 
 ### ML/DS developing <a name="mlds"></a>
 
-See `eplore.ipynb` and `neural.ipynb` files.
+See `neural.ipynb` file.
