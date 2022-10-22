@@ -152,6 +152,7 @@ dmypy.json
 cython_debug/
 catboost_info/
 models/
+!app/models/
 models.rar
 log*
 *.csv
