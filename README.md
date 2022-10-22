@@ -49,7 +49,7 @@ or
 docker compose up --build
 ```
 
-> API documentation (Swagger UI) is located at http://localhost:8000.
+> API documentation (Swagger UI) is located at http://localhost:8000/docs.
 > Don`t use API from browser, may crash it because of huge response size. Instead use Insomnia or Postman
 
 ### Available models <a name="models"></a>:
