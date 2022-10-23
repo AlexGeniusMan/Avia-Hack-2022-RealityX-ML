@@ -10,6 +10,7 @@ Micro service to predict results from `csv` file.
 3. [Run API service](#run)
 4. [Available models](#models)
 5. [ML/DS developing](#mlds)
+6. [Оценка качества моделей](#quality)
 
 ### ML/DS results <a name="results"></a>
 
@@ -64,3 +65,7 @@ Models available in `/app/models` directory.
 ### ML/DS developing <a name="mlds"></a>
 
 See `neural.ipynb` file.
+
+### Оценка качества моделей <a name="quality"></a>
+
+Для оценки качества моделей используется процент ошибки - это сумма RMSE по всем типам двигателей и фазам полёта для этой метрики, поделённая на размах значений метрики
